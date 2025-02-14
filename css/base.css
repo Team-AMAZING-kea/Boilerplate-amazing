@@ -1,0 +1,79 @@
+reset * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*GLOBALE VARIABLER*/
+:root {
+  --bakgrunn: #f4f3f1;
+  --tema_farve: #b15529;
+  --dark_farve: #33170b;
+  --lys_farve: #e0d0b5;
+}
+/*FONTE*/
+@font-face {
+  font-family: "Helvetica";
+  src: local("Helvetica"), url("../fonte/Helvetica.woff") format("woff");
+}
+@font-face {
+  font-family: "Helvetica_obl";
+  src: url("../fonte/Helvetica-Oblique.woff") format("woff");
+}
+@font-face {
+  font-family: "merivale_demoregular";
+  src: url("../fonte/merivale-regular-webfont.woff2") format("woff2"), url("../fonte/merivale-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  font-family: "Helvetica";
+  font-size: 3rem;
+  font-weight: lighter;
+}
+h2 {
+  font-family: "Helvetica";
+  font-size: 2rem;
+  font-weight: lighter;
+}
+h3 {
+  font-family: "Helvetica";
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+h4 {
+  font-family: "Helvetica";
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+p {
+  font-family: "Helvetica";
+  font-size: 1.1rem;
+  font-weight: lighter;
+}
+a {
+  font-family: "Helvetica_obl";
+  font-size: 1.1rem;
+  font-weight: lighter;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  color: var(--dark_farve);
+}
+.hero_2 {
+  font-family: "ivypresto-display", serif;
+  font-weight: 100;
+  font-style: italic;
+}
+.hero {
+  font-family: "merivale_demoregular";
+}
+body {
+  background-color: var(--bakgrunn);
+}
