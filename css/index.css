@@ -1,0 +1,260 @@
+/**** TING TIL BASE CSS *****/
+
+body {
+  margin: 0 auto;
+}
+
+main {
+  max-width: 96vw;
+  margin: 0 auto;
+}
+
+@font-face {
+  font-family: "Light";
+  font-style: normal;
+  font-weight: normal;
+  color: var(--dark_farve);
+  src: local("Helvetica Light"), url("helvetica-light-587ebe5a59211.woff") format("woff");
+}
+
+.hero {
+  color: var(--dark_farve);
+  font-size: 30px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.hero_2 {
+  color: var(--tema_farve);
+  font-size: 30px;
+  letter-spacing: 4px;
+}
+
+/*  */ /*  */ /*  */ /*  */
+
+.hero-text_container {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.hero-img_container {
+  display: flex;
+  gap: 4vw;
+}
+
+.hero-img_container img {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.218);
+}
+
+.hero_label {
+  font-family: "Helvetica Light";
+  color: rgb(150, 150, 150);
+  font-style: oblique;
+  font-size: 14px;
+}
+
+.product-teaser_container {
+  gap: 4vw;
+  width: 100%;
+  margin-top: 80px;
+  justify-content: center;
+}
+
+.product-teaser {
+  display: flex;
+  gap: 4vw;
+  margin-bottom: clamp(160px, 30vw, 240px);
+  margin-top: 100px;
+  justify-content: center;
+  position: relative;
+}
+
+.product-teaser_container .section_title {
+  position: absolute;
+  top: -40px;
+}
+
+.section_title {
+  font-family: "Light";
+  text-align: center;
+  font-size: 24px;
+  letter-spacing: 1.5px;
+  color: var(--dark_farve);
+}
+
+.display-img {
+  filter: opacity(90%);
+  border: 0.5px solid black;
+  border-radius: 2px;
+}
+
+.frontpage-cta {
+  position: absolute;
+  top: 55vw;
+  display: flex;
+  justify-content: center;
+  font-family: "Light";
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  text-decoration: underline;
+  font-style: oblique;
+  color: var(--dark_farve);
+  text-transform: none;
+}
+
+.cta-text {
+  text-shadow: 1px 4px 2px rgb(255, 255, 255);
+}
+
+.cta_border-top {
+  position: absolute;
+  bottom: 20px;
+  width: 140%;
+  max-width: 260px;
+  height: 0.5px;
+  background-color: rgb(163, 163, 163);
+  margin-bottom: 15px;
+}
+
+.cta_border-bottom {
+  position: absolute;
+  top: 20px;
+  width: 140%;
+  max-width: 260px;
+  height: 0.5px;
+  background-color: rgb(163, 163, 163);
+  margin-top: 15px;
+}
+
+.seasonal_container {
+  margin: 16px 0 30px 0;
+}
+
+.seasonal-text_box {
+  font-family: "Helvetica Light";
+  font-size: 14px;
+  letter-spacing: 0.6px;
+  word-spacing: 105;
+  line-height: 2;
+  border: 0.5px solid rgb(150, 150, 150);
+}
+
+.seasonal-text {
+  padding: 16px;
+}
+
+.title2 {
+  color: var(--dark_farve);
+  font-family: "Light";
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  font-style: oblique;
+}
+
+.seasonal_container .title2 {
+  background-color: rgb(216, 216, 216);
+  padding: 8px;
+  margin-top: 20px;
+}
+
+.section-img {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.218);
+}
+
+.page-divider {
+  width: 100%;
+}
+
+/* DESKTOP */
+
+@media only screen and (min-width: 900px) {
+  body {
+    max-width: 95vw;
+  }
+
+  .hero-text_container {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 3.5vw;
+    padding: 4vw 0 4vw 0;
+  }
+
+  .hero {
+    color: var(--dark_farve);
+    font-size: 3.5vw;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+  }
+
+  .hero_2 {
+    color: var(--tema_farve);
+    font-size: 3.5vw;
+    letter-spacing: 4px;
+  }
+
+  .product-teaser_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    margin-top: 0px;
+  }
+
+  .product-teaser {
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    padding-top: 20px;
+  }
+
+  .section_title {
+    font-size: 30px;
+  }
+
+  .frontpage-cta {
+    font-size: 16px;
+    top: 120%;
+    margin-top: -1vw;
+  }
+
+  .cta_border-top {
+    max-width: 320px;
+    bottom: 30px;
+  }
+
+  .cta_border-bottom {
+    max-width: 320px;
+    top: 30px;
+  }
+
+  .seasonal_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4vw;
+    aspect-ratio: 1414.55 / 677.5;
+  }
+
+  .seasonal_container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .seasonal-text_box {
+    display: flex;
+    order: +1;
+    font-size: 16px;
+    flex-direction: column;
+    max-height: 100%;
+    overflow: scroll;
+  }
+
+  .seasonal-title_container {
+    margin-left: 50vw;
+  }
+
+  .page-divider {
+    margin-top: 80px;
+  }
+}
