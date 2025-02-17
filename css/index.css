@@ -10,7 +10,7 @@ main {
 }
 
 @font-face {
-  font-family: "Light";
+  font-family: "Helvetica Light";
   font-style: normal;
   font-weight: normal;
   color: var(--dark_farve);
@@ -31,6 +31,54 @@ main {
 }
 
 /*  */ /*  */ /*  */ /*  */
+
+header {
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  box-shadow: 1px 20px 40px rgba(255, 255, 255, 0.838);
+  position: fixed;
+  background-color: #fbfbfbf6;
+  z-index: 1;
+}
+
+.logo {
+  width: 150px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vw 4vw;
+  border: 0.5px solid var(--lys_farve);
+  text-shadow: 1px 4px 8px rgba(255, 255, 255, 0.838);
+}
+
+.menu a,
+.shop_menu a {
+  font-family: "Helvetica Light";
+  font-style: oblique;
+  color: var(--dark_farve);
+  text-decoration: 0.5px underline;
+}
+
+.menu_left {
+  display: flex;
+  align-items: baseline;
+  gap: 60px;
+}
+
+.cart {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+}
+
+.cart img {
+  width: 17px;
+}
 
 .hero-text_container {
   margin: 40px 0;
@@ -75,7 +123,7 @@ main {
 }
 
 .section_title {
-  font-family: "Light";
+  font-family: "Helvetica Light";
   text-align: center;
   font-size: 24px;
   letter-spacing: 1.5px;
@@ -93,11 +141,11 @@ main {
   top: 55vw;
   display: flex;
   justify-content: center;
-  font-family: "Light";
+  font-family: "Helvetica Light";
   text-align: center;
   font-size: 14px;
   letter-spacing: 1.5px;
-  text-decoration: underline;
+  text-decoration: underline 0.5px;
   font-style: oblique;
   color: var(--dark_farve);
   text-transform: none;
@@ -113,7 +161,7 @@ main {
   width: 140%;
   max-width: 260px;
   height: 0.5px;
-  background-color: rgb(163, 163, 163);
+  background-color: var(--lys_farve);
   margin-bottom: 15px;
 }
 
@@ -123,7 +171,7 @@ main {
   width: 140%;
   max-width: 260px;
   height: 0.5px;
-  background-color: rgb(163, 163, 163);
+  background-color: var(--lys_farve);
   margin-top: 15px;
 }
 
@@ -146,7 +194,7 @@ main {
 
 .title2 {
   color: var(--dark_farve);
-  font-family: "Light";
+  font-family: "Helvetica Light";
   font-size: 16px;
   letter-spacing: 1.5px;
   font-style: oblique;
