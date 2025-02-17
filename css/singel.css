@@ -10,7 +10,18 @@ body {
   display: flex;
   flex-direction: column;
 }
-
+.price_container {
+  display: flex;
+  gap: 10px;
+}
+.discount {
+  background-color: var(--tema_farve);
+  padding: 1px;
+}
+.discount_price {
+  text-decoration: line-through;
+  color: grey;
+}
 button {
   color: var(--bakgrunn);
   font-family: "Helvetica";
@@ -70,6 +81,7 @@ hr {
 .hide {
   color: transparent;
 }
+
 img {
   width: 60vh;
   border: solid 0.1rem var(--dark_farve);
@@ -149,6 +161,11 @@ img {
 }
 .hero_2 {
   line-height: 0.2;
+  font-size: 2.5rem;
+}
+.dropdown-content .grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 @media (min-width: 1024px) {
   .grid_1-1 {
@@ -157,5 +174,9 @@ img {
   }
   img {
     width: 100%;
+  }
+  .hero_2 {
+    line-height: 0.2;
+    font-size: 3rem;
   }
 }
