@@ -3,6 +3,16 @@ reset * {
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  margin: 0 auto;
+}
+
+main {
+  max-width: 96vw;
+  margin: 0 auto;
+}
+
 img {
   width: 100%;
   height: auto;
@@ -21,6 +31,14 @@ img {
   font-family: "Helvetica";
   src: local("Helvetica"), url("../fonte/Helvetica.woff") format("woff");
 }
+
+@font-face {
+  font-family: "Helvetica Light";
+  font-style: normal;
+  font-weight: lighter;
+  src: local("Helvetica Light"), url("helvetica-light-587ebe5a59211.woff") format("woff");
+}
+
 @font-face {
   font-family: "Helvetica_obl";
   src: url("../fonte/Helvetica-Oblique.woff") format("woff");
@@ -33,9 +51,11 @@ img {
 }
 
 h1 {
-  font-family: "Helvetica";
-  font-size: 3rem;
-  font-weight: lighter;
+  font-family: "Helvetica Light";
+  text-align: center;
+  font-size: 24px;
+  letter-spacing: 1.5px;
+  color: var(--dark_farve);
 }
 h2 {
   font-family: "Helvetica";
@@ -48,32 +68,62 @@ h3 {
   font-weight: lighter;
 }
 h4 {
-  font-family: "Helvetica";
-  font-size: 1.2rem;
-  font-weight: lighter;
+  color: var(--dark_farve);
+  font-family: "Helvetica Light";
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  font-style: oblique;
 }
 p {
-  font-family: "Helvetica";
-  font-size: 1.1rem;
-  font-weight: lighter;
+  font-family: "Helvetica Light";
+  font-size: 14px;
+  letter-spacing: 0.6px;
+  word-spacing: 105;
+  line-height: 2;
 }
 a {
-  font-family: "Helvetica_obl";
+  font-family: "Helvetica Light";
   font-size: 1.1rem;
   font-weight: lighter;
-  text-decoration: none;
   text-transform: uppercase;
   letter-spacing: -1px;
+  font-style: oblique;
+  text-decoration: 0.5px underline;
   color: var(--dark_farve);
 }
 .hero_2 {
   font-family: "ivypresto-display", serif;
   font-weight: 100;
   font-style: italic;
+  color: var(--tema_farve);
+  font-size: 30px;
 }
 .hero {
   font-family: "merivale_demoregular";
+  color: var(--dark_farve);
+  font-size: 30px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
 }
 body {
   background-color: var(--bakgrunn);
+}
+
+@media only screen and (min-width: 900px) {
+  body {
+    max-width: 95vw;
+  }
+
+  .hero {
+    font-size: 3.5vw;
+  }
+
+  .hero_2 {
+    font-size: 3.5vw;
+    letter-spacing: 4px;
+  }
+
+  p {
+    font-size: 16px;
+  }
 }
