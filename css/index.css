@@ -52,6 +52,10 @@ header {
   padding-top: 8vw;
 }
 
+.hero_2 {
+  color: var(--tema_farve);
+}
+
 .hero-img_container {
   display: flex;
   gap: 4vw;

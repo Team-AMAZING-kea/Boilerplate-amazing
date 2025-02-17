@@ -106,6 +106,15 @@ body {
   background-color: var(--bakgrunn);
 }
 
+.background-texture {
+  background-image: url(../imgs/product_background.svg);
+  background-size: cover;
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+/* DESKTOP MEDIA-QUERY ELEMENTER */
+
 @media only screen and (min-width: 900px) {
   body {
     max-width: 95vw;
