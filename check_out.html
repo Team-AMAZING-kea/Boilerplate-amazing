@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.typekit.net/vfp8hfc.css" />
+    <link rel="stylesheet" href="/css/base.css" />
+    <link rel="stylesheet" href="/css/check_out.css" />
+    <title>Checkout</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="checkout_form">
+        <form>
+          <h3>DELIVERY</h3>
+          <input type="radio" id="ship" name="delivery" />
+          <label for="ship">Ship</label><br />
+          <input type="radio" id="pickup" name="delivery" />
+          <label for="pickup">Pickup in store</label>
+          <div class="world">
+            <select name="world_list">
+              <option value="">Country/region</option>
+              <option value="Denmark">Denmark</option>
+              <option value="Norway">Norway</option>
+              <option value="Sweden">Sweden</option>
+            </select>
+          </div>
+
+          <input placeholder="First name" name="fname" type="text" />
+          <input placeholder="Last name" name="lname" type="text" /><br />
+          <input placeholder="Address" name="personal_address" type="text" /><br />
+          <input placeholder="Postal code" name="post" type="text" />
+          <input placeholder="City" name="city" type="text" /><br />
+          <input placeholder="Phone" name="phone" type="text" />
+          <h3>PAYMENT</h3>
+          <input type="radio" id="credit" name="pay" />
+          <label for="credit">Credit card</label>
+          <input type="radio" id="mobilepay" name="pay" />
+          <label for="mobilepay">MobilePay</label><br />
+          <input placeholder="Card number" name="cardnumber" type="text" />
+          <input placeholder="Expiration date" name="expirydate" type="text" />
+          <input placeholder="CVV" name="card_verification" type="text" />
+          <button>Buy now</button>
+        </form>
+      </div>
+      <section class="basket">
+        <h4 id="cart">Your basket:</h4>
+        <div class="items">
+          <img src="https://cdn.dummyjson.com/products/images/kitchen-accessories/Carbon%20Steel%20Wok/1.png" alt="carbon steel wok" />
+          <img src="https://cdn.dummyjson.com/products/images/kitchen-accessories/Knife/1.png" alt="knife" />
+          <img src="https://cdn.dummyjson.com/products/images/kitchen-accessories/Chopping%20Board/1.png" alt="chopping board" />
+          <img src="https://cdn.dummyjson.com/products/images/kitchen-accessories/Kitchen%20Sieve/1.png" alt="kitchen sieve" />
+        </div>
+        <h4 id="thank_u">THANK YOU FOR SHOPPING</h4>
+      </section>
+    </div>
+  </body>
+</html>
