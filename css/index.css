@@ -1,33 +1,3 @@
-/**** TING TIL BASE CSS *****/
-
-main {
-  max-width: 96vw;
-  margin: 0 auto;
-}
-
-@font-face {
-  font-family: "Helvetica Light";
-  font-style: normal;
-  font-weight: normal;
-  color: var(--dark_farve);
-  src: local("Helvetica Light"), url("helvetica-light-587ebe5a59211.woff") format("woff");
-}
-
-.hero {
-  color: var(--dark_farve);
-  font-size: 30px;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-}
-
-.hero_2 {
-  color: var(--tema_farve);
-  font-size: 30px;
-  letter-spacing: 4px;
-}
-
-/*  */ /*  */ /*  */ /*  */
-
 header {
   width: 100%;
   position: relative;
@@ -79,6 +49,7 @@ header {
 .hero-text_container {
   margin: 40px 0;
   text-align: center;
+  padding-top: 8vw;
 }
 
 .hero-img_container {

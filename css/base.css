@@ -97,6 +97,7 @@ a {
   font-style: italic;
   color: var(--tema_farve);
   font-size: 30px;
+  letter-spacing: 4px;
 }
 .hero {
   font-family: "merivale_demoregular";
