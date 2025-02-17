@@ -24,11 +24,15 @@ select {
 
 button {
   display: block;
+  color: var(--bakgrunn);
+  font-family: "Helvetica";
   margin: auto;
-  padding: 10px;
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 3vh;
+  width: 26vh;
   cursor: pointer;
+  background-color: var(--tema_farve);
+  border: solid 0.1rem var(--tema_farve);
 }
 
 input[type="text"] {
