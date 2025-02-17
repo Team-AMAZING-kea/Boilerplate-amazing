@@ -107,7 +107,7 @@ body {
 }
 
 .background-texture {
-  background-image: url(../imgs/product_background.svg);
+  background-image: url(../imgs/background-texture.svg);
   background-size: cover;
   width: 100%;
   aspect-ratio: 1/1;
