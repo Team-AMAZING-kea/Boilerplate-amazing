@@ -52,7 +52,6 @@ img {
 
 h1 {
   font-family: "Helvetica Light";
-  text-align: center;
   font-size: 24px;
   letter-spacing: 1.5px;
   color: var(--dark_farve);
@@ -68,7 +67,6 @@ h3 {
   font-weight: lighter;
 }
 h4 {
-  color: var(--dark_farve);
   font-family: "Helvetica Light";
   font-size: 16px;
   letter-spacing: 1.5px;
@@ -86,21 +84,20 @@ a {
   font-size: 1.1rem;
   font-weight: lighter;
   text-transform: uppercase;
-  letter-spacing: -1px;
   font-style: oblique;
   text-decoration: 0.5px underline;
   color: var(--dark_farve);
+  letter-spacing: -1px;
 }
 .hero_2 {
   font-family: "ivypresto-display", serif;
   font-weight: 100;
   font-style: italic;
-  color: var(--tema_farve);
   font-size: 30px;
+  letter-spacing: 4px;
 }
 .hero {
   font-family: "merivale_demoregular";
-  color: var(--dark_farve);
   font-size: 30px;
   letter-spacing: 4px;
   text-transform: uppercase;
