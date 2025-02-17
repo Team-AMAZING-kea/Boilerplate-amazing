@@ -86,10 +86,10 @@ a {
   font-size: 1.1rem;
   font-weight: lighter;
   text-transform: uppercase;
-  letter-spacing: -1px;
   font-style: oblique;
   text-decoration: 0.5px underline;
   color: var(--dark_farve);
+  letter-spacing: -1px;
 }
 .hero_2 {
   font-family: "ivypresto-display", serif;
