@@ -16,7 +16,7 @@ header {
 .menu {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
   padding: 1vw 4vw;
   border: 0.5px solid var(--lys_farve);
   text-shadow: 1px 4px 8px rgba(255, 255, 255, 0.838);
@@ -28,6 +28,7 @@ header {
   font-style: oblique;
   color: var(--dark_farve);
   text-decoration: 0.5px underline;
+  display: flex;
 }
 
 .menu_left {
@@ -47,13 +48,13 @@ header {
 }
 
 .hero-text_container {
-  margin: 40px 0;
+  margin-top: 40px;
   text-align: center;
   padding-top: 8vw;
 }
 
 .hero_2 {
-  color: var(--tema_farve);
+  color: #68463bf6;
 }
 
 .hero-img_container {
@@ -65,11 +66,29 @@ header {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.218);
 }
 
-.hero_label {
-  font-family: "Helvetica Light";
-  color: rgb(150, 150, 150);
+.intro-text {
+  justify-content: center;
+  align-items: center;
+  width: 60vw;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 40px;
   font-style: oblique;
-  font-size: 14px;
+  word-spacing: 4px;
+}
+
+.intro-text .title2 {
+  font-size: 16px;
+  color: #68463bf6;
+  font-family: "Helvetica Light";
+  margin-bottom: -8px;
+  font-style: oblique;
+  margin-top: -10px;
+}
+
+.intro-text p {
+  color: #68463bf6;
+  letter-spacing: 1px;
 }
 
 .product-teaser_container {
@@ -158,18 +177,22 @@ header {
   padding: 16px;
 }
 
-.title2 {
-  color: var(--dark_farve);
-  font-family: "Helvetica Light";
-  font-size: 16px;
-  letter-spacing: 1.5px;
+.seasonal_container .title2 {
+  padding: 12px;
   font-style: oblique;
 }
 
-.seasonal_container .title2 {
-  background-color: rgb(216, 216, 216);
-  padding: 8px;
-  margin-top: 20px;
+.seasonal_container a {
+  color: #68463bf6;
+  display: flex;
+  margin-top: 60px;
+}
+
+.title2 {
+  color: var(--dark_farve);
+  font-family: "Helvetica";
+  font-size: 16px;
+  letter-spacing: 1.5px;
 }
 
 .section-img {
@@ -203,7 +226,6 @@ header {
   }
 
   .hero_2 {
-    color: var(--tema_farve);
     font-size: 3.5vw;
     letter-spacing: 4px;
   }
