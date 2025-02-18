@@ -116,10 +116,6 @@ body {
 /* DESKTOP MEDIA-QUERY ELEMENTER */
 
 @media only screen and (min-width: 900px) {
-  body {
-    max-width: 95vw;
-  }
-
   .hero {
     font-size: 3.5vw;
   }

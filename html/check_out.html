@@ -6,53 +6,138 @@
     <link rel="stylesheet" href="https://use.typekit.net/vfp8hfc.css" />
     <link rel="stylesheet" href="/css/base.css" />
     <link rel="stylesheet" href="/css/check_out.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
     <title>Checkout</title>
   </head>
   <body>
-    <div class="container">
-      <div class="checkout_form">
-        <form>
-          <h3>DELIVERY</h3>
-          <input type="radio" id="ship" name="delivery" />
-          <label for="ship">Ship</label><br />
-          <input type="radio" id="pickup" name="delivery" />
-          <label for="pickup">Pickup in store</label>
-          <div class="world">
-            <select name="world_list">
-              <option value="">Country/region</option>
-              <option value="Denmark">Denmark</option>
-              <option value="Norway">Norway</option>
-              <option value="Sweden">Sweden</option>
-            </select>
-          </div>
-
-          <input placeholder="First name" name="fname" type="text" />
-          <input placeholder="Last name" name="lname" type="text" /><br />
-          <input placeholder="Address" name="personal_address" type="text" /><br />
-          <input placeholder="Postal code" name="post" type="text" />
-          <input placeholder="City" name="city" type="text" /><br />
-          <input placeholder="Phone" name="phone" type="text" />
-          <h3>PAYMENT</h3>
-          <input type="radio" id="credit" name="pay" />
-          <label for="credit">Credit card</label>
-          <input type="radio" id="mobilepay" name="pay" />
-          <label for="mobilepay">MobilePay</label><br />
-          <input placeholder="Card number" name="cardnumber" type="text" />
-          <input placeholder="Expiration date" name="expirydate" type="text" />
-          <input placeholder="CVV" name="card_verification" type="text" />
-          <button>Buy now</button>
-        </form>
-      </div>
-      <section class="basket">
-        <h4 id="cart">YOUR BASKET:</h4>
-        <div class="items">
-          <img src="https://cdn.dummyjson.com/products/images/kitchen-accessories/Carbon%20Steel%20Wok/1.png" alt="carbon steel wok" />
-          <img src="https://cdn.dummyjson.com/products/images/kitchen-accessories/Knife/1.png" alt="knife" />
-          <img src="https://cdn.dummyjson.com/products/images/kitchen-accessories/Chopping%20Board/1.png" alt="chopping board" />
-          <img src="https://cdn.dummyjson.com/products/images/kitchen-accessories/Kitchen%20Sieve/1.png" alt="kitchen sieve" />
+    <header class="header">
+      <nav class="menu">
+        <div class="menu_left">
+          <a href="index.html">Logo</div></a>
+          <a href=""><div>Shop</div></a>
+          <a href=""><div>Categories</div></a>
         </div>
-        <h4 id="thank_u">THANK YOU FOR SHOPPING</h4>
-      </section>
-    </div>
+        <a href=""
+          ><div class="cart"><img class="cart-symbol" src="/imgs/cart-symbol_orange.svg" alt="" />Cart</div></a
+        >
+      </nav>
+      <nav class="shop_menu"></nav>
+    </header>
+    <main>
+      <div class="container">
+        <div class="checkout_form">
+          <form>
+            <h3>DELIVERY</h3>
+            <input type="radio" id="ship" name="delivery" />
+            <label for="ship">Ship</label><br />
+            <input type="radio" id="pickup" name="delivery" />
+            <label for="pickup">Pickup in store</label>
+            <div class="world">
+              <select name="world_list">
+                <option value="">Country/region</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Australia">Australia</option>
+                <option value="Austria">Austria</option>
+                <option value="Belgium">Belgium</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Canada">Canada</option>
+                <option value="Chile">Chile</option>
+                <option value="China">China</option>
+                <option value="Czech Republic">Czech Republic</option>
+                <option value="Denmark">Denmark</option>
+                <option value="Estonia">Estonia</option>
+                <option value="Finland">Finland</option>
+                <option value="France">France</option>
+                <option value="Germany">Germany</option>
+                <option value="Greece">Greece</option>
+                <option value="Hungary">Hungary</option>
+                <option value="Iceland">Iceland</option>
+                <option value="India">India</option>
+                <option value="Ireland">Ireland</option>
+                <option value="Italy">Italy</option>
+                <option value="Japan">Japan</option>
+                <option value="Latvia">Latvia</option>
+                <option value="Lithuania">Lithuania</option>
+                <option value="Luxembourg">Luxembourg</option>
+                <option value="Malaysia">Malaysia</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Netherlands">Netherlands</option>
+                <option value="New Zealand">New Zealand</option>
+                <option value="Norway">Norway</option>
+                <option value="Poland">Poland</option>
+                <option value="Portugal">Portugal</option>
+                <option value="Singapore">Singapore</option>
+                <option value="Slovakia">Slovakia</option>
+                <option value="Slovenia">Slovenia</option>
+                <option value="South Korea">South Korea</option>
+                <option value="Spain">Spain</option>
+                <option value="Sweden">Sweden</option>
+                <option value="Switzerland">Switzerland</option>
+                <option value="Thailand">Thailand</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="United States">United States</option>
+              </select>
+            </div>
+            <input placeholder="First name" name="fname" type="text" />
+            <input placeholder="Last name" name="lname" type="text" /><br />
+            <input placeholder="Address" name="personal_address" type="text" /><br />
+            <input placeholder="Postal code" name="post" type="text" />
+            <input placeholder="City" name="city" type="text" /><br />
+            <input placeholder="Phone" name="phone" type="text" />
+            <h3>PAYMENT</h3>
+            <input type="radio" id="credit" name="pay" />
+            <label for="credit">Credit card</label>
+            <input type="radio" id="mobilepay" name="pay" />
+            <label for="mobilepay">MobilePay/PayPal</label><br />
+            <input placeholder="Card number" name="cardnumber" type="text" />
+            <input placeholder="Expiration date (MM / YY)" name="expirydate" type="text" />
+            <input placeholder="Security number (CVC/CVV)" name="card_verification" type="text" />
+            <button>Buy now</button>
+          </form>
+        </div>
+        <section class="basket">
+          <h4 id="your_basket">YOUR BASKET:</h4>
+          <div class="items">
+            <img src="https://cdn.dummyjson.com/products/images/kitchen-accessories/Carbon%20Steel%20Wok/1.png" alt="carbon steel wok" />
+            <img src="https://cdn.dummyjson.com/products/images/kitchen-accessories/Knife/1.png" alt="knife" />
+            <img src="https://cdn.dummyjson.com/products/images/kitchen-accessories/Chopping%20Board/1.png" alt="chopping board" />
+            <img src="https://cdn.dummyjson.com/products/images/kitchen-accessories/Kitchen%20Sieve/1.png" alt="kitchen sieve" />
+          </div>
+          <h4 id="thank_u">THANK YOU FOR SHOPPING!</h4>
+        </section>
+      </div>
+      <img class="page-divider" src="/imgs/page-divider.svg" alt="" />
+    </main>
+    <footer>
+      <div class="footerdiv">
+        <div class="followus">
+          <h5>FOLLOW US</h5>
+          <div class="some">
+            <a href="index.html">
+              <img src="/imgs/instagram-logo.svg" alt="instagram" />
+            </a>
+            <a href="index.html">
+              <img src="/imgs/facebook.svg" alt="facebook" />
+            </a>
+          </div>
+        </div>
+        <div class="contactus">
+          <h5>CONTACT US</h5>
+          <a href="index.html"><p>+45 88 88 8</p></a>
+          <a href="index.html"><p>atelie@gmail.com</p></a>
+        </div>
+        <div class="mellemrum"></div>
+        <div class="storlocation">
+          <h5>STORE LOCATION</h5>
+          <a href="index.html"><p>Find a store</p></a>
+        </div>
+        <div class="customercare">
+          <h5>CUSTOMER CARE</h5>
+          <a href="index.html"><p>FAQ</p></a>
+          <a href="index.html"><p>Product waranty</p></a>
+          <a href="index.html"><p>Care and maintenance</p></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
