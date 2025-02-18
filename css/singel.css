@@ -83,7 +83,6 @@ hr {
 }
 
 img {
-  width: 60vh;
   border: solid 0.1rem var(--dark_farve);
   margin: 0 auto;
 }
@@ -153,15 +152,23 @@ img {
 .grey {
   color: grey;
 }
+.grey::first-letter {
+  text-transform: uppercase;
+}
 .number {
   text-align: end;
 }
 .border {
   border-right: solid 0.1rem var(--dark_farve);
 }
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .hero_2 {
-  line-height: 0.2;
   font-size: 2.5rem;
+  margin: -3vh 0 -3vh 0;
 }
 .dropdown-content .grid_1-1 {
   display: grid;
@@ -176,7 +183,6 @@ img {
     width: 100%;
   }
   .hero_2 {
-    line-height: 0.2;
     font-size: 3rem;
   }
 }
