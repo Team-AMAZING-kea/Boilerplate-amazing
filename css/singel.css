@@ -1,8 +1,3 @@
-body {
-  max-width: 1250px;
-  margin: 0 auto;
-}
-
 .col {
   margin: 5vh;
 }
@@ -29,8 +24,8 @@ button {
   padding: 3vh;
   width: 50vh;
   cursor: pointer;
-  background-color: var(--tema_farve);
-  border: solid 0.1rem var(--tema_farve);
+  background-color: var(--dark_farve);
+  border: solid 0.1rem var(--dark_farve);
 }
 .button-container {
   display: flex;
@@ -39,7 +34,7 @@ button {
   gap: 10px; /* Space between the buttons */
 }
 .button-container button:first-child {
-  color: var(--tema_farve);
+  color: var(--dark_farve);
   background-color: var(--bakgrunn);
 }
 
@@ -101,9 +96,7 @@ img {
   border-top: solid 0.1rem var(--dark_farve);
   cursor: pointer;
 }
-.dropdown-button_info {
-  border-right: solid 0.1rem var(--dark_farve);
-}
+
 .dropdown-button_rev:hover,
 .dropdown-button_info:hover {
   color: gray;
@@ -158,9 +151,7 @@ img {
 .number {
   text-align: end;
 }
-.border {
-  border-right: solid 0.1rem var(--dark_farve);
-}
+
 .title {
   display: flex;
   flex-direction: column;
@@ -184,5 +175,9 @@ img {
   }
   .hero_2 {
     font-size: 3rem;
+  }
+
+  .border {
+    border-right: solid 0.1rem var(--dark_farve);
   }
 }
