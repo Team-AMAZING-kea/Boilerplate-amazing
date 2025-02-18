@@ -1,0 +1,43 @@
+.footerdiv {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  max-width: 100%;
+  height: 250px;
+  padding-top: 25px;
+  background-color: #33170b;
+  margin-top: 100px;
+  padding-left: 75px;
+}
+
+.footerdiv p {
+  color: #e0d0b5;
+  font-family: "Helvetica Light";
+  font-weight: 100;
+  font-size: small;
+  line-height: 1;
+}
+
+.footerdiv a {
+  text-transform: none;
+}
+
+.footerdiv a :hover {
+  text-decoration: underline;
+}
+
+.some img {
+  width: 25px;
+}
+
+.some {
+  display: flex;
+  gap: 10px;
+}
+
+h5 {
+  color: #e0d0b5;
+  font-family: "Helvetica";
+  font-weight: 2000;
+  font-style: italic;
+  font-size: larger;
+}
