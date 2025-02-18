@@ -8,7 +8,6 @@
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  margin-top: 15%;
 }
 
 @media (min-width: 900px) {
@@ -70,6 +69,10 @@ p {
   margin-top: -25px;
 }
 
+.hojre p {
+  text-decoration: none;
+}
+
 .baggrund {
   background-image: url(img/background-texture.svg);
 }
@@ -77,4 +80,11 @@ p {
 img {
   align-items: right;
   justify-items: right;
+}
+
+.productlist .product {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  width: 100%;
+  height: 100vh;
 }
