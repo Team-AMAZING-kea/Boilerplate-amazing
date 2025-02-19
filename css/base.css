@@ -224,8 +224,8 @@ header {
 h5 {
   color: #e0d0b5;
   font-family: "Helvetica";
-  font-weight: bold;
   font-style: italic;
+  font-weight: 900;
   font-size: 16px;
   white-space: nowrap;
 }
@@ -267,6 +267,5 @@ h5 {
 
   h5 {
     font-size: 10px;
-    font-weight: bold;
   }
 }
