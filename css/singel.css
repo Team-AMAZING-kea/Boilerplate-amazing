@@ -9,10 +9,7 @@
   display: flex;
   gap: 10px;
 }
-.discount {
-  background-color: var(--tema_farve);
-  padding: 1px;
-}
+
 .discount_price {
   text-decoration: line-through;
   color: grey;
@@ -27,15 +24,19 @@ button {
   background-color: var(--dark_farve);
   border: solid 0.1rem var(--dark_farve);
 }
+button:hover {
+  transform: scale(1.02);
+}
+.basket {
+  background-color: var(--bakgrunn);
+  border: solid 0.1rem var(--dark_farve);
+  color: var(--dark_farve);
+}
 .button-container {
   display: flex;
   flex-direction: column; /* Stack items vertically */
   align-items: start; /* Align buttons in the center horizontally */
   gap: 10px; /* Space between the buttons */
-}
-.button-container button:first-child {
-  color: var(--dark_farve);
-  background-color: var(--bakgrunn);
 }
 
 #counter-container {
@@ -67,7 +68,7 @@ button {
 }
 
 .control-button:hover {
-  color: grey;
+  transform: scale(1.02);
 }
 hr {
   margin-top: 5vh;
@@ -80,7 +81,7 @@ hr {
 .show {
   color: gray;
 }
-img {
+.background-texture img {
   border: solid 0.1rem var(--dark_farve);
   margin: 0 auto;
 }
@@ -104,7 +105,9 @@ img {
 .dropdown-button_info:hover {
   color: gray;
 }
-
+.control-button:hover {
+  transform: scale(1.2);
+}
 /* Dropdown content (hidden by default) */
 .dropdown-content {
   display: none; /* Initially hidden */
@@ -167,6 +170,9 @@ img {
 .dropdown-content .grid_1-1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+.discount {
+  color: var(--tema_farve);
 }
 @media (min-width: 1024px) {
   .grid_1-1 {
