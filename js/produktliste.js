@@ -15,8 +15,9 @@ function showList(products) {
   console.log("products");
   const markup = products
     .map(
-      (products) => ` <article class="product_container">
-            <a href="singel.html?id=${products.id}">
+      (products) => `
+       <article class="product_container">
+            <a href="../singel.html?${products.id}">
               <div class="background-texture discount_img">
                 <img src="${products.images[0]}" alt="sink" />
               </div>
