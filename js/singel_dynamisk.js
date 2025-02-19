@@ -19,9 +19,9 @@ fetch(`https://dummyjson.com/products/12`) // fixed URL
             </div>
             <p class="grey">${product.tags[0]} I ${product.tags[1]}</p>
             <div class="price_container">
-              <p class="bold">${product.price},-€</p>
-              <p class="discount">20%</p>
-              <p class="discount_price">1899.99, - DKK</p>
+              <p class="bold">€${product.discountPercentage ? (product.price * (1 - product.discountPercentage / 100)).toFixed(2) : product.price}</p>
+              <p class="discount hide ${product.discountPercentage ? "show" : ""}">${product.discountPercentage}%</p>
+              <p class="discount_price hide ${product.discountPercentage ? "show" : ""}">€${product.price}</p>
             </div>
             <p>${product.description}</p>
             <p class="bold">Quantity</p>
@@ -36,9 +36,7 @@ fetch(`https://dummyjson.com/products/12`) // fixed URL
               <button>Add to basket</button>
               <button>Buy now</button>
             </div>
-            <p>
-              Unfortunently this product is not in stock, <span><a href="">notify me!</a></span>
-            </p>
+        
           
           </div>
    
@@ -78,7 +76,7 @@ fetch(`https://dummyjson.com/products/12`) // fixed URL
             <p>${review.date}</p>
               </div>
               <div class="review">
-                <p>${"*".repeat(review.rating)}</p>
+                <p>${"★".repeat(review.rating)}</p>
                 <p>${review.comment}</p>
               </div>
             `
