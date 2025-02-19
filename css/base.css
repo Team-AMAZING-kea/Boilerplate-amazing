@@ -168,13 +168,11 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   max-width: 100%;
-  /* height: 250px; */
   padding-top: 25px;
   background-color: #33170b;
   margin-top: 100px;
   padding-bottom: 25px;
   padding-left: 25px;
-  padding-right: 25px;
   gap: 30px;
 }
 
@@ -186,7 +184,7 @@ header {
   color: #e0d0b5;
   font-family: "Helvetica Light";
   font-weight: 100;
-  font-size: x-small;
+  font-size: small;
   line-height: 1;
 }
 
@@ -198,6 +196,10 @@ header {
   text-decoration: underline;
 }
 
+.followus {
+  margin-left: 80px;
+}
+
 .some img {
   width: 25px;
 }
@@ -207,24 +209,25 @@ header {
   gap: 10px;
 }
 
+.contactus {
+  margin-left: 150px;
+}
+
+.storelocation {
+  margin-left: 400px;
+}
+
+.customercare {
+  margin-left: 112px;
+}
+
 h5 {
   color: #e0d0b5;
   font-family: "Helvetica";
-  font-weight: 2000;
+  font-weight: bold;
   font-style: italic;
-  font-size: smaller;
-  padding-bottom: -10px;
-}
-
-@media (min-width: 900px) {
-  .footerdiv {
-    padding-left: 75px;
-    padding-right: 75px;
-  }
-
-  .mellemrum {
-    display: block;
-  }
+  font-size: 16px;
+  white-space: nowrap;
 }
 
 /* DESKTOP MEDIA-QUERY ELEMENTER */
@@ -245,5 +248,25 @@ h5 {
 
   main {
     max-width: 95vw;
+  }
+}
+
+/* footer mobile media query */
+
+@media only screen and (max-width: 900px) {
+  .customercare,
+  .storelocation,
+  .contactus,
+  .followus {
+    margin-left: 8px;
+  }
+
+  .footerdiv p {
+    font-size: 10px;
+  }
+
+  h5 {
+    font-size: 10px;
+    font-weight: bold;
   }
 }
