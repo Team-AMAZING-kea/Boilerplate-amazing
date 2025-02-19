@@ -1,15 +1,38 @@
-const category = new URLSearchParams(window.location.search).get("category");
+let productContainer = document.querySelector(".product");
+const getUrl = window.location.search;
+const getSearch = new URLSearchParams(getUrl);
+const myCategories = getSearch.get("categories");
+let allData;
 
-let productCard = document.querySelector("#product_list_container");
-fetch(`https://kea-alt-del.dk/t7/api/products?limit=&category=${category}`)
-  .then((response) => response.json())
-  .then((data) => showList(data));
+fetch(`https://dummyjson.com/products/category/${myCategories}`).then((response) =>
+  response.json().then((data) => {
+    allData = data.products;
+    showList(data.products);
+  })
+);
 
 function showList(products) {
-  console.log(products);
-  const markup = products 
-
-  .map( 
-    (data) =>
-      `<a href="product.html?id=${data.id}" class="productItem">
- <article class="smallProduct">   
+  console.log("products");
+  const markup = products
+    .map(
+      (products) => ` <article class="product_container">
+            <a href="singel.html?id=${products.id}">
+              <div class="background-texture discount_img">
+                <img src="${products.images[0]}" alt="sink" />
+              </div>
+              <div class="grid_1-1">
+                <p>${products.title}</p>
+                <div class="flexbox">
+                 <div class="flexbox_2">
+                  <p class="discount hide ${products.discountPercentage ? "show" : ""}">€${products.price}</p>
+                  <p>€${products.discountPercentage ? (products.price * (1 - products.discountPercentage / 100)).toFixed(2) : products.price}</p>
+                  </div>
+                  <p class="add_to_chart">Add to cart</p>
+                </div>
+              </div>
+            </a>
+          </article>`
+    )
+    .join("");
+  productContainer.innerHTML = markup;
+}
