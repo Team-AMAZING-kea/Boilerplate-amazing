@@ -151,7 +151,8 @@ hr {
 .grey {
   color: grey;
 }
-.grey::first-letter {
+.uppercase {
+  color: gray;
   text-transform: uppercase;
 }
 .number {

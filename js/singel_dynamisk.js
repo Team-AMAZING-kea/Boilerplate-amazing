@@ -17,7 +17,7 @@ fetch(`https://dummyjson.com/products/${productId}`) // fixed URL
           <div class="title">
             <h1 class="hero_2">${product.title}</h1>
             </div>
-            <p class="grey">${product.tags[0]} I ${product.tags[1]}</p>
+            <p class="uppercase">${product.tags[0]} | ${product.tags[1]}</p>
             <div class="price_container">
               <p class="bold">€${product.discountPercentage ? (product.price * (1 - product.discountPercentage / 100)).toFixed(2) : product.price}</p>
               <p class="discount_price hide ${product.discountPercentage ? "show" : ""}">€${product.price}</p>
