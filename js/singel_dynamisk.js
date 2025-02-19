@@ -5,7 +5,7 @@ let reviewContainer = document.querySelector(".content_rev");
 
 console.log("sidenVises");
 
-fetch(`https://dummyjson.com/products/12`) // fixed URL
+fetch(`https://dummyjson.com/products/${productId}`) // fixed URL
   .then((response) => response.json()) // fixed case issue
   .then((product) => {
     dynamiskInnhold.innerHTML = `
