@@ -12,6 +12,9 @@
 .dynamisk_innhold {
   margin-top: 15vh;
 }
+.margin_img {
+  margin: 0 5vh 0 5vh;
+}
 .discount_price {
   text-decoration: line-through;
   color: grey;
