@@ -79,7 +79,7 @@ input[type="text"] {
 }
 
 .items img {
-  background-image: url(/imgs/background-texture.svg);
+  background-image: url(../imgs/background-texture.svg);
   margin-top: 10px;
 }
 
