@@ -38,7 +38,7 @@ img {
   font-family: "Helvetica Light";
   font-style: normal;
   font-weight: lighter;
-  src: local("Helvetica Light"), url("helvetica-light-587ebe5a59211.woff") format("woff");
+  src: local("Helvetica Light"), url("../fonte/helvetica-light-587ebe5a59211.woff") format("woff");
 }
 
 @font-face {
