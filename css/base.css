@@ -11,6 +11,7 @@ body {
 main {
   max-width: 96vw;
   margin: 0 auto;
+  margin-top: 40px;
 }
 
 img {
@@ -89,6 +90,10 @@ a {
   color: var(--dark_farve);
   letter-spacing: -1px;
 }
+
+a:hover {
+  color: #876a60f6;
+}
 .hero_2 {
   font-family: "ivypresto-display", serif;
   font-weight: 100;
@@ -97,10 +102,11 @@ a {
   letter-spacing: 4px;
 }
 .hero {
-  font-family: "merivale_demoregular";
+  font-family: "ivypresto-display", serif;
+  font-style: italic;
   font-size: 30px;
   letter-spacing: 4px;
-  text-transform: uppercase;
+  font-weight: 100;
 }
 body {
   background-color: var(--bakgrunn);
@@ -113,44 +119,46 @@ body {
   aspect-ratio: 1/1;
 }
 
-/*  HEADER STYLING */
+/* HEADER STYLING */
 
 header {
+  position: fixed;
   width: 100%;
-  position: relative;
   top: 0;
   left: 0;
   box-shadow: 1px 20px 40px rgba(255, 255, 255, 0.838);
-  position: fixed;
   background-color: #fbfbfbf6;
   z-index: 1;
 }
 
 .logo {
-  width: 130px;
+  width: 150px;
+  font-family: "merivale_demoregular";
+  font-size: 40px;
+  font-style: normal;
+  text-decoration: none;
+  color: var(--tema_farve);
+  display: flex;
+}
+
+.logo:hover {
+  color: var(--tema_farve);
 }
 
 .menu {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 1vw 4vw;
+  align-items: baseline;
+  padding: 10px 3vw;
   border: 0.5px solid var(--lys_farve);
   text-shadow: 1px 4px 8px rgba(255, 255, 255, 0.838);
 }
 
-.menu a,
-.shop_menu a {
-  font-family: "Helvetica Light";
-  font-style: oblique;
-  color: var(--dark_farve);
-  text-decoration: 0.5px underline;
-}
-
-.menu_left {
+.menu_right {
   display: flex;
   align-items: baseline;
   gap: 60px;
+  visibility: hidden;
 }
 
 .cart {
@@ -162,6 +170,99 @@ header {
 .cart img {
   width: 17px;
 }
+
+/*  */
+
+/*  BURGER MENU STYLING */
+
+.desktop_header * {
+  visibility: hidden;
+}
+
+.mobile_header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+  box-shadow: 1px 20px 40px rgba(255, 255, 255, 0.838);
+  background-color: #fbfbfbf6;
+  z-index: 2;
+}
+
+.burger-nav {
+  display: flex;
+  align-items: baseline;
+  padding: 10px 3vw;
+  border: 0.5px solid var(--lys_farve);
+  text-shadow: 1px 4px 8px rgba(255, 255, 255, 0.838);
+}
+
+.off-screen-menu {
+  background-color: var(--bakgrunn);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(249, 248, 247, 0.8085434857536764) 31%, rgba(244, 243, 241, 1) 56%);
+  height: 100vh;
+  width: 100%;
+  max-width: 450px;
+  position: fixed;
+  top: 0;
+  right: -450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+  text-align: baseline;
+  transition: 0.3s ease;
+  z-index: 1;
+  border: 0.5px solid var(--lys_farve);
+  line-height: 4;
+  padding-top: 90px;
+}
+
+.off-screen-menu.active {
+  right: 0;
+}
+
+.burger-menu {
+  height: 30px;
+  width: 35px;
+  margin-left: auto;
+  position: relative;
+}
+
+.burger-menu span {
+  height: 2px;
+  width: 100%;
+  background-color: #68463bf6;
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s ease;
+}
+
+.burger-menu span:nth-child(1) {
+  top: 15%;
+}
+
+.burger-menu span:nth-child(3) {
+  top: 85%;
+}
+
+.burger-menu:active span {
+  background-color: var(--tema_farve);
+}
+.burger-menu:hover span {
+  background-color: #876a60f6;
+}
+
+.burger-menu:hover {
+  cursor: pointer;
+}
+
+/*  */
+
 /* footer */
 
 .footerdiv {
@@ -233,6 +334,15 @@ h5 {
 /* DESKTOP MEDIA-QUERY ELEMENTER */
 
 @media only screen and (min-width: 900px) {
+  main {
+    max-width: 95vw;
+    margin-top: 40px;
+  }
+
+  .menu_right {
+    visibility: visible;
+  }
+
   .hero {
     font-size: 3.5vw;
   }
@@ -246,9 +356,25 @@ h5 {
     font-size: 16px;
   }
 
-  main {
-    max-width: 95vw;
+  /*  HEADER MOBILE/DESKTOP VISIBILITY  */
+
+  .desktop_header * {
+    visibility: visible;
   }
+  .mobile_header,
+  .off-screen-menu {
+    visibility: hidden;
+  }
+
+  .burger-menu {
+    visibility: hidden;
+  }
+
+  .off-screen-menu {
+    visibility: hidden;
+  }
+
+  /*  */
 }
 
 /* footer mobile media query */
