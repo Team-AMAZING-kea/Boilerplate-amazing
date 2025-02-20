@@ -10,40 +10,58 @@
   </head>
 
   <body>
-    <header class="header">
+    <header class="desktop_header">
       <nav class="menu">
-        <div class="menu_left">
-          <a href="index.html"
-            ><div><img class="logo" src="imgs/logo-placholder.svg" alt="" /></div
-          ></a>
-          <a href=""><div>Shop</div></a>
-          <a href=""><div>Categories</div></a>
+        <a class="logo" href="index.html"><div>ATELIE</div></a>
+        <div class="menu_right">
+          <a href=""><div>Catalogue</div></a>
+
+          <a href="html/check_out.html"
+            ><div class="cart"><img class="cart-symbol" src="imgs/cart-symbol_orange.svg" alt="" />Cart</div></a
+          >
         </div>
-        <a href=""
-          ><div class="cart"><img class="cart-symbol" src="imgs/cart-symbol_orange.svg" alt="" />Cart</div></a
-        >
       </nav>
-      <nav class="shop_menu"></nav>
     </header>
+    <div class="off-screen-menu">
+      <ul>
+        <a href="html/check_out.html"><li>Cart</li></a>
+        <a href=""><li>Catalogue</li></a>
+        <a href="index.html"><li>Frontpage</li></a>
+      </ul>
+    </div>
+    <header class="mobile_header">
+      <nav class="burger-nav">
+        <a class="logo" href="index.html"><div>ATELIE</div></a>
+        <div class="burger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
     <main>
       <div class="hero-text_container">
         <div class="hero">The Nordic Dream :</div>
         <div class="hero_2">your future home</div>
       </div>
 
-      <div class="intro-text">
-        <div>
-          <div class="title2">Welcome to [Name] interior!</div>
-
-          <p>"Simple, functional, sustainable, and effortlessly beautiful."</p>
+      <div class="seasonal-title_container"></div>
+      <section class="seasonal_container">
+        <div class="hero-img_container">
+          <img class="hero-img" src="imgs/frontpage/furnaceRoom-3.webp" alt="" />
         </div>
-      </div>
+        <div class="seasonal-text_box">
+          <div class="seasonal-text">
+            <b>Welcome to <em>ATELIE,</em></b
+            ><br />
 
-      <section class="hero-img_container">
-        <div>
-          <img src="imgs/frontpage/living-room_hero.webp" alt="" />
+            where Scandinavian craftsmanship meets contemporary luxury.
+          </div>
+          <div class="seasonal-text">Our curated collection of Nordic design furniture blends simplicity, functionality, and premium materials to create timeless interiors.</div>
+          <div class="seasonal-text">Discover the beauty of minimalism, the warmth of natural materials, and the enduring quality of true Scandinavian design.</div>
+          <div class="seasonal-text"><em>Designed to inspire. Made to last. </em><br /></div>
         </div>
-        <div><img src="imgs/frontpage/kitchen_hero.webp" alt="" /></div>
       </section>
 
       <section class="product-teaser_container">
@@ -79,33 +97,8 @@
         </div>
       </section>
 
-      <div class="seasonal-title_container">
-        <div class="section_title">Seasonal topic</div>
-      </div>
-      <section class="seasonal_container">
-        <div class="seasonal-text_box">
-          <div class="seasonal-text">Each season we curate a hand-picked selection of our products matching the current topic of style to ignite your inspirational spark.</div>
-          <div class="seasonal-text">
-            Browse selected items above and flow into the Nordic Dream. <br />
-            <br />
-          </div>
-
-          <div class="title2">Topic: 'The Nordic Dream'</div>
-
-          <div class="seasonal-text">
-            Immerse yourself in the essence of Nordic serenity with our exclusive seasonal collection, The Nordic Dream. <br />
-            <br />
-            Inspired by the soft hues of Scandinavian landscapes, this curated selection blends natural materials, timeless craftsmanship, and harmonious design. <br />
-            Each piece is thoughtfully chosen to bring warmth, balance, and effortless elegance into your home—creating a sanctuary of calm and beauty. <br />
-            <br />
-            Discover the dream of Nordic living.
-
-            <a class="p-link" href=""><p>Shop the collection here</p></a>
-          </div>
-        </div>
-        <img class="section-img" src="imgs/frontpage/furnaceRoom.webp" alt="" />
-      </section>
       <img class="page-divider" src="imgs/page-divider.svg" alt="" />
     </main>
   </body>
+  <script src="../burger-menu.js"></script>
 </html>
