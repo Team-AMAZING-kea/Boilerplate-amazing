@@ -81,6 +81,7 @@ input[type="text"] {
 .items img {
   background-image: url(../imgs/background-texture.svg);
   margin-top: 10px;
+  border: solid 0.5px var(--dark_farve);
 }
 
 #thank_u {
