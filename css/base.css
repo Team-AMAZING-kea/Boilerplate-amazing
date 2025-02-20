@@ -266,19 +266,10 @@ header {
 /* footer */
 
 .footerdiv {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  max-width: 100%;
-  padding-top: 25px;
+  display: flex;
+  justify-content: space-between;
   background-color: #33170b;
-  margin-top: 100px;
-  padding-bottom: 25px;
-  padding-left: 25px;
-  gap: 30px;
-}
-
-.mellemrum {
-  display: none;
+  padding: 0 10vh 3vh 10vh;
 }
 
 .footerdiv p {
@@ -297,10 +288,6 @@ header {
   text-decoration: underline;
 }
 
-.followus {
-  margin-left: 80px;
-}
-
 .some img {
   width: 25px;
 }
@@ -308,18 +295,6 @@ header {
 .some {
   display: flex;
   gap: 10px;
-}
-
-.contactus {
-  margin-left: 150px;
-}
-
-.storelocation {
-  margin-left: 400px;
-}
-
-.customercare {
-  margin-left: 112px;
 }
 
 h5 {
@@ -380,15 +355,11 @@ h5 {
 /* footer mobile media query */
 
 @media only screen and (max-width: 900px) {
-  .customercare,
-  .storelocation,
-  .contactus,
-  .followus {
-    margin-left: 8px;
-  }
-
   .footerdiv p {
     font-size: 10px;
+  }
+  .footerdiv {
+    padding: 0 5vh 1vh 5vh;
   }
 
   h5 {
