@@ -18,8 +18,9 @@ function showList(products) {
       (products) => ` <article class="product_container">
             <a href="singel.html?id=${products.id}">
               <div class="background-texture discount_img">
-                <img src="${products.images[0]}" alt="sink" />
+                <img src="${products.images[0]}" alt="${products.title}" />
               </div>
+                </a>
               <div class="grid_1-1">
                 <p>${products.title}</p>
                 <div class="flexbox">
@@ -27,10 +28,12 @@ function showList(products) {
                   <p class="discount hide ${products.discountPercentage ? "show" : ""}">€${products.price}</p>
                   <p>€${products.discountPercentage ? (products.price * (1 - products.discountPercentage / 100)).toFixed(2) : products.price}</p>
                   </div>
-                  <p class="add_to_chart">Add to cart</p>
+                   <a href="singel.html?id=${products.id}">
+                  <p class="add_to_chart">Read more</p>
+                     </a>
                 </div>
               </div>
-            </a>
+           
           </article>`
     )
     .join("");

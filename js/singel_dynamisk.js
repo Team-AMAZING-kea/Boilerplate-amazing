@@ -9,7 +9,7 @@ fetch(`https://dummyjson.com/products/${productId}`) // fixed URL
   .then((response) => response.json()) // fixed case issue
   .then((product) => {
     dynamiskInnhold.innerHTML = `
-      <div>
+      <div class="margin_img">
         <a href="../html/produktliste.html?categories=${product.category}">Back to categories</a>
           <div class="background-texture">
          

@@ -48,11 +48,10 @@ hr {
   margin-left: 1%;
 }
 .produktliste_main {
-  margin: 10vh 0 20vh 0;
+  margin: 12vh 8vh 20vh 8vh;
 }
 .menu_produktliste {
   margin-top: 5%;
-  margin-left: 2%;
   list-style-type: none;
   line-height: 2; /* Øger linjeafstanden */
 }
@@ -106,6 +105,9 @@ p {
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   width: 100%;
 }
-a:hover {
-  color: var(--tema_farve);
+.discount_img:hover {
+  transform: scale(1.02);
+}
+.add_to_chart:hover {
+  text-decoration: underline;
 }
