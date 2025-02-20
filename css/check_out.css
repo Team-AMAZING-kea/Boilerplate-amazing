@@ -1,5 +1,5 @@
 main {
-  padding: 50px;
+  padding-top: 50px;
 }
 
 input,
@@ -52,6 +52,7 @@ input[type="text"] {
   margin: auto;
   display: flex;
   flex-direction: column;
+  padding: 30px;
 }
 
 .checkout_form {
@@ -91,18 +92,14 @@ input[type="text"] {
 
 .page-divider {
   width: 100%;
-  margin-top: 25px;
 }
 
 /* media query */
 
 @media screen and (min-width: 800px) {
-  main {
-    padding: 50px 110px 0px 110px;
-  }
-
   .container {
     flex-direction: row;
+    padding: 80px;
   }
 
   .checkout_form {
