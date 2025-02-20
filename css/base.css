@@ -9,7 +9,8 @@ body {
 }
 
 main {
-  max-width: 96vw;
+  /* max-width: 96vw; */
+  max-width: 1000px;
   margin: 0 auto;
   margin-top: 40px;
 }
@@ -219,7 +220,7 @@ header {
   line-height: 4;
   padding-top: 90px;
 }
-.off-screen-menu a {
+.off-screen-menu li {
   list-style: none;
 }
 .off-screen-menu.active {
