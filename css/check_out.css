@@ -94,6 +94,9 @@ input[type="text"] {
   width: 100%;
 }
 
+button:hover {
+  transform: scale(1.02);
+}
 /* media query */
 
 @media screen and (min-width: 800px) {
