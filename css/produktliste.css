@@ -31,6 +31,9 @@
 }
 .product_container img {
   width: 100%;
+  border: solid 0.1rem var(--dark_farve);
+  aspect-ratio: 1/1;
+  object-fit: cover;
 }
 
 /* ---------- PRODUCT ---------- */
@@ -50,7 +53,9 @@ hr {
 .hero_2 {
   margin-left: 1%;
 }
-
+.produktliste_main {
+  margin: 10vh 0 20vh 0;
+}
 .menu_produktliste {
   margin-top: 5%;
   margin-left: 2%;
@@ -95,13 +100,6 @@ p {
 
 .baggrund {
   background-image: url(img/background-texture.svg);
-}
-
-img {
-  border: solid 0.1rem var(--dark_farve);
-  width: 100%;
-  aspect-ratio: 1/1;
-  object-fit: cover;
 }
 .hide {
   color: transparent;
