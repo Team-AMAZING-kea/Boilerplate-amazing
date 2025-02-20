@@ -105,7 +105,6 @@ p {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   width: 100%;
-  height: 100vh;
 }
 a:hover {
   color: var(--tema_farve);
