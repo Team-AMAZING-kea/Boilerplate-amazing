@@ -141,9 +141,9 @@ input[type="text"] {
 /* media query */
 
 @media screen and (min-width: 800px) {
-  main {
+  /* main {
     padding: 110px;
-  }
+  } */
 
   .container {
     flex-direction: row;
