@@ -210,6 +210,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: baseline;
+
   align-items: center;
   text-align: baseline;
   transition: 0.3s ease;
@@ -218,7 +219,9 @@ header {
   line-height: 4;
   padding-top: 90px;
 }
-
+.off-screen-menu a {
+  list-style: none;
+}
 .off-screen-menu.active {
   right: 0;
 }
