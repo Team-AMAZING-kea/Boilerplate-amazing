@@ -9,7 +9,9 @@
   display: flex;
   gap: 10px;
 }
-
+.dynamisk_innhold {
+  margin-top: 10vh;
+}
 .discount_price {
   text-decoration: line-through;
   color: grey;

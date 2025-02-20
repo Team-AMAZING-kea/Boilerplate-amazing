@@ -9,18 +9,34 @@
     <title>Produkt</title>
   </head>
   <body>
-    <header class="header">
+    <header class="desktop_header">
       <nav class="menu">
-        <div class="menu_left">
-          <a href="index.html">Logo</a>
-          <a href=""><div>Shop</div></a>
-          <a href=""><div>Categories</div></a>
+        <a class="logo" href="../index.html"><div>ATELIE</div></a>
+        <div class="menu_right">
+          <a href="../html/produktliste.html?categories=furniture"><div>Catalogue</div></a>
+
+          <a href="../html/check_out.html"
+            ><div class="cart"><img class="cart-symbol" src="imgs/cart-symbol_orange.svg" alt="" />Cart</div></a
+          >
         </div>
-        <a href=""
-          ><div class="cart"><img class="cart-symbol" src="/imgs/cart-symbol_orange.svg" alt="" />Cart</div></a
-        >
       </nav>
-      <nav class="shop_menu"></nav>
+    </header>
+    <div class="off-screen-menu">
+      <ul>
+        <a href="../html/check_out.html"><li>Cart</li></a>
+        <a href="../html/produktliste.html?categories=furniture"><li>Catalogue</li></a>
+        <a href="../index.html"><li>Frontpage</li></a>
+      </ul>
+    </div>
+    <header class="mobile_header">
+      <nav class="burger-nav">
+        <a class="logo" href="index.html"><div>ATELIE</div></a>
+        <div class="burger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
     </header>
     <main>
       <section class="grid_1-1 dynamisk_innhold"></section>
@@ -72,5 +88,6 @@
     </footer>
     <script src="../js/singel_dynamisk.js"></script>
     <script src="../js/singel.js"></script>
+    <script src="../burgermenu.js"></script>
   </body>
 </html>
