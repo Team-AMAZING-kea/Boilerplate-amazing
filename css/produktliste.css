@@ -63,7 +63,7 @@ hr {
   line-height: 2; /* Øger linjeafstanden */
 }
 
-a {
+.produktliste_main a {
   text-decoration: none;
 }
 
