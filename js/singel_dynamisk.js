@@ -11,7 +11,7 @@ fetch(`https://dummyjson.com/products/${productId}`) // fixed URL
     dynamiskInnhold.innerHTML = `
        
           <div class="background-texture">
-            <img src="${product.images[1]}" alt="sofa" />
+            <img src="${product.images[0]}" alt="sofa" />
           </div>
           <div class="col">
           <div class="title">
